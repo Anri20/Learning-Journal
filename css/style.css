@@ -1,7 +1,128 @@
+/* Default Mobile */
+
 * {
     box-sizing: border-box;
+    font-family: "Source Sans Pro", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "head"
+        "main"
+        "foot"
+    ;
 }
+
+header {
+    grid-area: head;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 1.25em;
+}
+
+div.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .3em;
+}
+
+div.header h1 {
+    font-size: 1rem;
+    font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div.header img {
+    width: 7vw;
+    height: 7vw;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+nav li {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+main {
+    grid-area: main;
+}
+
+div.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://s3-alpha-sig.figma.com/img/c528/e275/f482e6b5ba3982a470eec07267b8d035?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ljSUvko~9V4Dec0RdGjEGlfkSovUuIKh6WziAdbvGTv2t9HCveBHmG6U5iSeaRcjEC1oX3LI5gm21P1Iae2GgKTcPdJe7SDjS4y5AtmPovtd4KUp5pB3eu4YtFv39RMPyXuGW5y~Ftm-7UQjyq9TsbzCHsc3H0DkfbKVIT529ZNzKOe-mnqyq7cqHujUv42uxu7Ua73zLbMmznAIu-0cof7~B9AcAGj5pH6w5vxpMlijNCa3ZD4y9U0uALTSpQCZ2KsRDIw8~M4lrMVKaBcLtFqltE9eYAP4-Je839-9WGgCDA9h9FI-jO35xgUZnNcAiI5Gbb5pN5jf82c6uwAhQw__");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    transform: scaleX(-1);
+    z-index: -1;
+    filter: brightness(60%);
+}
+
+div.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 32vh;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    padding: 1.5em 1.25em;
+}
+
+div.hero h1,
+div.hero p {
+    margin: 0;
+}
+
+div.hero time {
+    font-size: .75rem;
+}
+
+div.hero h1 {
+    font-size: 2rem;
+}
+
+div.hero p {
+    font-size: 1rem;
+}
+
+footer {
+    grid-area: foot;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .2em;
+    background-color: #202020;
+    color: #ECECEC;
+    padding: 2em;
+}
+
+footer h1,
+footer p {
+    font-size: .75rem;
+    margin: 0;
+}
+
+footer h1 {
+    font-weight: 700;
+}
+
+footer p {
+    font-weight: 400;
+}
+
+/* For Desktop */
+
+@media (min-width: 1024px) {}
