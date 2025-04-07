@@ -1,0 +1,317 @@
+const main = document.querySelector("main")
+
+document.addEventListener("click", function (e) {
+    switch (e.target.id) {
+        case "home":
+            main.innerHTML = `
+                <div class="hero" role="img">
+                    <time datetime="2022-07-23">JULY 23, 2022</time>
+                    <h1>My new journey as a bootcamp student.</h1>
+                    <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over to
+                        the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+                </div>
+                <section class="content">
+                    <article id="blog-1" class="blog">
+                        <img src="https://www.figma.com/file/hE5klIn1AEQ9XWZWmurs7y/image/8bba0412e2ae760e042fb536660cc3cdf3d078cc"
+                            alt="A laptop with code on it's screen and a small plant beside it">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog one</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <article id="blog-2" class="blog">
+                        <img src="https://s3-alpha-sig.figma.com/img/bfde/8904/0b8b12a3905aae211b4670527c7c14f6?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=uPjBRtFnVKKhAU3TO5NgjcJJJy9~NEdJMqj5HTnDLxEXqxNtrXbKORLgnXQ377uniwmzxutsrV3r8bbqD7-T4nu42pc7yuW9imuShJx2Y8uyyOGUK7i4jaJ~TyHeQoRd1IFWpuKADIsblgITAGLdvjKWN3PtWx6EmHBylJyhCn9DTUbYaxZRbaSAs4omdHT12BdLV4bd7hGhg19JskWMoj3dBuO0twe8eiNINe-imW4R5~rlkzLDgV~Lhvug3Z6sB7iFUMzV4hegyuVebp7vODhV5-atzAF6PB1gL~6~vYvesdsDpD-MCaIaDfNL2XXKmBBnp8VIBmE9b8RdOqGkww__"
+                            alt="A hand holding a light bulb in the afternoon">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog two</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <article id="blog-3" class="blog">
+                        <img src="https://s3-alpha-sig.figma.com/img/062a/3beb/3fd9a71d2711716f0bf2116a93ad6814?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=j8JId08VTvqZ0zXBZUhsEha83PjudD9MG0mm-0319NrE1klgwgNv8HcWfH2uMJmSHsEkK1nDCKiqPkQ~azsoDdeiag9WNsmeR-Xi44wRixYQ9NJMXhiCvUzcu1KbHo3XUKxqkJLWpVFpEFaJ6UFOqSm5bCk-TCY9UUMqLzRXvuTrjO-BUObv00AQ1WN08t5L15wirGD13QEjCV~hyP7RwzvhYE8K5qKs0ngTD4hM5RQKPp3ZApnEjG-MMS2Bb2S~rA7kPgEpKH-Fxr4NFaQdfMUTcM6JjAWfOJRvDYiORYEHk9LTU2BORbn0ZNBvxheCL-T~XDWpfDyxE2T~QAQntw__"
+                            alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog three</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <article id="blog-4" class="blog">
+                        <img src="https://s3-alpha-sig.figma.com/img/5a4d/8928/842e1cf5e6ab208031fc99447598d14c?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HQX3sHKXVLX-3s-G6ubePZtwNObbqAF8Dglg4dTWqsqIxhh50q5GA3VUSr3EOuXM4UAfSSxn-MM5PuVK8NUqLkc8~etMkeYBBQuosZt~x4oMVXaQyqW8LxckBLJSaX~aBZNtVQqv~A4Le-1fna3bXz8KSAQdl2IC~ZUqpXOEkdDevw7AQd2076dF7u89HIIZlUAbnQVbI1xS-Y4Q6eNeJvn4jKuxjJ8xoyWsCFJ70kFzBEWaDU-TlEBnWeSn556ZJdQL8rZlmaCS3Efo0f4317LGBYoLO2RWTGUFudAF8AOlLXkw0iR~ISeaHAmTSht4fAIaQfohd7WBCXbO5GVCXw__"
+                            alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog four</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <article id="blog-5" class="blog">
+                        <img src="https://s3-alpha-sig.figma.com/img/b7c7/13ea/e964d4bccf1ee2ab70109b006993d526?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IRljpERwA8BXxLdVhgs8zQKD5zH9mAZe9zMmV9kiHi0BrRO9Xgp8XSZeuCzZrH-blTLA3zAUifV0bZJ0A6XhFyEZ5ZeynCus~oYrg1u21DUg0-DiEml9EfHazvdkcK36MnAE8TQzM1SPfgybnzmcOy5apFjnlzQalZ3ZImOKL3isFXEHAIzsZq6-leuVJOfgebWwHDwvag~kJn6bJJRIPv0f5r1MTxDJIfgYJB4ltDQlmkoZh0xldGD~p7LObu1oPEZ8vaaJkjVEY0Uogtf9ty4Ep80o5VPjoKIdHDa2OCrqqjqNa--AbxO~I04L73KnR9RIHrIeI-thIzfm9Pxd2w__"
+                            alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog five</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <article id="blog-6" class="blog">
+                        <img src="https://s3-alpha-sig.figma.com/img/9b72/8f07/4396bf39d3cbc0d14baeb0804fc69d9a?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TrjHaxZDNilhNE~Zywgf2TE-GWTILX6RFp06rc4hdXSlQEh8uuUx8F7NlnhB6GhnUkY0e4VosLuI3lxqaON7zionn~jLFLNqblrD8HFgz2vO3iTNJKwd1mUVUCHDEtza53tEeSEa2-xn7GXKLkCNGgJChP55OMycTo8qmCdpU34GPfjzvfzWEyQG0q3FMHutC5MbZwjjdn-sm~tkbjWUa3hLiVqhn4sS3TS-YNHy~iB8wSRBUdwnchJjgzdxk4Wpxtwp9a9zP2NY-CfypsvL3E2BpqtvgtmK5VI5iyze6IhX~wHF3p76jqAvePf3Xy68p5xR1yhG6ZMusZNFYpkx3Q__"
+                            alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog six</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <article id="blog-6-2" class="blog">
+                        <img src="https://s3-alpha-sig.figma.com/img/9b72/8f07/4396bf39d3cbc0d14baeb0804fc69d9a?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TrjHaxZDNilhNE~Zywgf2TE-GWTILX6RFp06rc4hdXSlQEh8uuUx8F7NlnhB6GhnUkY0e4VosLuI3lxqaON7zionn~jLFLNqblrD8HFgz2vO3iTNJKwd1mUVUCHDEtza53tEeSEa2-xn7GXKLkCNGgJChP55OMycTo8qmCdpU34GPfjzvfzWEyQG0q3FMHutC5MbZwjjdn-sm~tkbjWUa3hLiVqhn4sS3TS-YNHy~iB8wSRBUdwnchJjgzdxk4Wpxtwp9a9zP2NY-CfypsvL3E2BpqtvgtmK5VI5iyze6IhX~wHF3p76jqAvePf3Xy68p5xR1yhG6ZMusZNFYpkx3Q__"
+                            alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog three</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <h1 id="more"><a id="view-more" href="#">View More</a></h1>
+                </section>`
+            break;
+        case "about-me":
+            main.innerHTML = `
+                <section id="self-article" class="main-article">
+                    <div class="article-intro introduction">
+                        <img id="prof-pic" src="./images/me.png" alt="Writer's face">
+                        <div class="intro-desc">
+                            <h1>Hi there! My name is Henri and welcome to my learning journal.</h1>
+                            <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump
+                                over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet
+                                like-minded peers. </p>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <h2>How I stay committed to learning</h2>
+                        <p>I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try
+                            to create simple projects using what I learned or work new techniques into existing projects.</p>
+                        <p> While that was fun, I felt like it would be helpful to share what I was learning and most things
+                            about my journey with the world. </p>
+                        <h2>How I got started</h2>
+                        <p> I started simple and gradually grew my learning journal site. I would take notes about what I was
+                            learning. After each learning session, I'd use my notes to not only reflect on what I learned but
+                            also write short summaries of what I learned using my own words. </p>
+                        <p> That helped me grow what I was learning, and I realized that posting my learning summaries was also
+                            helping others learn and stay motivated. </p>
+                    </div>
+                </section>
+                <section class="content">
+                    <h1 id="recent-posts">Recent posts</h1>
+                    <article id="blog-1" class="blog">
+                        <img src="https://www.figma.com/file/hE5klIn1AEQ9XWZWmurs7y/image/8bba0412e2ae760e042fb536660cc3cdf3d078cc"
+                            alt="A laptop with code on it's screen and a small plant beside it">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog one</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <article id="blog-2" class="blog">
+                        <img src="https://s3-alpha-sig.figma.com/img/bfde/8904/0b8b12a3905aae211b4670527c7c14f6?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=uPjBRtFnVKKhAU3TO5NgjcJJJy9~NEdJMqj5HTnDLxEXqxNtrXbKORLgnXQ377uniwmzxutsrV3r8bbqD7-T4nu42pc7yuW9imuShJx2Y8uyyOGUK7i4jaJ~TyHeQoRd1IFWpuKADIsblgITAGLdvjKWN3PtWx6EmHBylJyhCn9DTUbYaxZRbaSAs4omdHT12BdLV4bd7hGhg19JskWMoj3dBuO0twe8eiNINe-imW4R5~rlkzLDgV~Lhvug3Z6sB7iFUMzV4hegyuVebp7vODhV5-atzAF6PB1gL~6~vYvesdsDpD-MCaIaDfNL2XXKmBBnp8VIBmE9b8RdOqGkww__"
+                            alt="A hand holding a light bulb in the afternoon">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog two</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <article id="blog-3" class="blog">
+                        <img src="https://s3-alpha-sig.figma.com/img/062a/3beb/3fd9a71d2711716f0bf2116a93ad6814?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=j8JId08VTvqZ0zXBZUhsEha83PjudD9MG0mm-0319NrE1klgwgNv8HcWfH2uMJmSHsEkK1nDCKiqPkQ~azsoDdeiag9WNsmeR-Xi44wRixYQ9NJMXhiCvUzcu1KbHo3XUKxqkJLWpVFpEFaJ6UFOqSm5bCk-TCY9UUMqLzRXvuTrjO-BUObv00AQ1WN08t5L15wirGD13QEjCV~hyP7RwzvhYE8K5qKs0ngTD4hM5RQKPp3ZApnEjG-MMS2Bb2S~rA7kPgEpKH-Fxr4NFaQdfMUTcM6JjAWfOJRvDYiORYEHk9LTU2BORbn0ZNBvxheCL-T~XDWpfDyxE2T~QAQntw__"
+                            alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog three</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <article id="blog-4" class="blog">
+                        <img src="https://s3-alpha-sig.figma.com/img/5a4d/8928/842e1cf5e6ab208031fc99447598d14c?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HQX3sHKXVLX-3s-G6ubePZtwNObbqAF8Dglg4dTWqsqIxhh50q5GA3VUSr3EOuXM4UAfSSxn-MM5PuVK8NUqLkc8~etMkeYBBQuosZt~x4oMVXaQyqW8LxckBLJSaX~aBZNtVQqv~A4Le-1fna3bXz8KSAQdl2IC~ZUqpXOEkdDevw7AQd2076dF7u89HIIZlUAbnQVbI1xS-Y4Q6eNeJvn4jKuxjJ8xoyWsCFJ70kFzBEWaDU-TlEBnWeSn556ZJdQL8rZlmaCS3Efo0f4317LGBYoLO2RWTGUFudAF8AOlLXkw0iR~ISeaHAmTSht4fAIaQfohd7WBCXbO5GVCXw__"
+                            alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog four</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <article id="blog-5" class="blog">
+                        <img src="https://s3-alpha-sig.figma.com/img/b7c7/13ea/e964d4bccf1ee2ab70109b006993d526?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IRljpERwA8BXxLdVhgs8zQKD5zH9mAZe9zMmV9kiHi0BrRO9Xgp8XSZeuCzZrH-blTLA3zAUifV0bZJ0A6XhFyEZ5ZeynCus~oYrg1u21DUg0-DiEml9EfHazvdkcK36MnAE8TQzM1SPfgybnzmcOy5apFjnlzQalZ3ZImOKL3isFXEHAIzsZq6-leuVJOfgebWwHDwvag~kJn6bJJRIPv0f5r1MTxDJIfgYJB4ltDQlmkoZh0xldGD~p7LObu1oPEZ8vaaJkjVEY0Uogtf9ty4Ep80o5VPjoKIdHDa2OCrqqjqNa--AbxO~I04L73KnR9RIHrIeI-thIzfm9Pxd2w__"
+                            alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog five</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <article id="blog-6" class="blog">
+                        <img src="https://s3-alpha-sig.figma.com/img/9b72/8f07/4396bf39d3cbc0d14baeb0804fc69d9a?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TrjHaxZDNilhNE~Zywgf2TE-GWTILX6RFp06rc4hdXSlQEh8uuUx8F7NlnhB6GhnUkY0e4VosLuI3lxqaON7zionn~jLFLNqblrD8HFgz2vO3iTNJKwd1mUVUCHDEtza53tEeSEa2-xn7GXKLkCNGgJChP55OMycTo8qmCdpU34GPfjzvfzWEyQG0q3FMHutC5MbZwjjdn-sm~tkbjWUa3hLiVqhn4sS3TS-YNHy~iB8wSRBUdwnchJjgzdxk4Wpxtwp9a9zP2NY-CfypsvL3E2BpqtvgtmK5VI5iyze6IhX~wHF3p76jqAvePf3Xy68p5xR1yhG6ZMusZNFYpkx3Q__"
+                            alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog six</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <article id="blog-6-2" class="blog">
+                        <img src="https://s3-alpha-sig.figma.com/img/9b72/8f07/4396bf39d3cbc0d14baeb0804fc69d9a?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TrjHaxZDNilhNE~Zywgf2TE-GWTILX6RFp06rc4hdXSlQEh8uuUx8F7NlnhB6GhnUkY0e4VosLuI3lxqaON7zionn~jLFLNqblrD8HFgz2vO3iTNJKwd1mUVUCHDEtza53tEeSEa2-xn7GXKLkCNGgJChP55OMycTo8qmCdpU34GPfjzvfzWEyQG0q3FMHutC5MbZwjjdn-sm~tkbjWUa3hLiVqhn4sS3TS-YNHy~iB8wSRBUdwnchJjgzdxk4Wpxtwp9a9zP2NY-CfypsvL3E2BpqtvgtmK5VI5iyze6IhX~wHF3p76jqAvePf3Xy68p5xR1yhG6ZMusZNFYpkx3Q__"
+                            alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog three</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <h1 id="more"><a id="view-more" href="#">View More</a></h1>
+                </section>`
+            break;
+        case "view-more":
+            main.innerHTML = `
+                <section class="main-article">
+                    <div class="article-intro">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>My new journey as a bootcamp student.</h1>
+                        <p id="first">After several months of learning in the Frontend Developer Career Path, I've made the big
+                            jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet
+                            like-minded peers.</p>
+                    </div>
+                    <img src="https://s3-alpha-sig.figma.com/img/c528/e275/f482e6b5ba3982a470eec07267b8d035?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ljSUvko~9V4Dec0RdGjEGlfkSovUuIKh6WziAdbvGTv2t9HCveBHmG6U5iSeaRcjEC1oX3LI5gm21P1Iae2GgKTcPdJe7SDjS4y5AtmPovtd4KUp5pB3eu4YtFv39RMPyXuGW5y~Ftm-7UQjyq9TsbzCHsc3H0DkfbKVIT529ZNzKOe-mnqyq7cqHujUv42uxu7Ua73zLbMmznAIu-0cof7~B9AcAGj5pH6w5vxpMlijNCa3ZD4y9U0uALTSpQCZ2KsRDIw8~M4lrMVKaBcLtFqltE9eYAP4-Je839-9WGgCDA9h9FI-jO35xgUZnNcAiI5Gbb5pN5jf82c6uwAhQw__"
+                        alt="A laptop with working/reading lamp beside it">
+                    <div class="article-content">
+                        <h2>How I stay committed to learning</h2>
+                        <p>I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try
+                            to create simple projects using what I learned or work new techniques into existing projects.</p>
+                        <p> While that was fun, I felt like it would be helpful to share what I was learning and most things
+                            about my journey with the world. </p>
+                        <h2>How I got started</h2>
+                        <p> I started simple and gradually grew my learning journal site. I would take notes about what I was
+                            learning. After each learning session, I'd use my notes to not only reflect on what I learned but
+                            also write short summaries of what I learned using my own words. </p>
+                        <p> That helped me grow what I was learning, and I realized that posting my learning summaries was also
+                            helping others learn and stay motivated. </p>
+                    </div>
+                </section>
+                <section class="content">
+                    <h1 id="recent-posts">Recent posts</h1>
+                    <article id="blog-1" class="blog">
+                        <img src="https://www.figma.com/file/hE5klIn1AEQ9XWZWmurs7y/image/8bba0412e2ae760e042fb536660cc3cdf3d078cc"
+                            alt="A laptop with code on it's screen and a small plant beside it">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog one</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <article id="blog-2" class="blog">
+                        <img src="https://s3-alpha-sig.figma.com/img/bfde/8904/0b8b12a3905aae211b4670527c7c14f6?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=uPjBRtFnVKKhAU3TO5NgjcJJJy9~NEdJMqj5HTnDLxEXqxNtrXbKORLgnXQ377uniwmzxutsrV3r8bbqD7-T4nu42pc7yuW9imuShJx2Y8uyyOGUK7i4jaJ~TyHeQoRd1IFWpuKADIsblgITAGLdvjKWN3PtWx6EmHBylJyhCn9DTUbYaxZRbaSAs4omdHT12BdLV4bd7hGhg19JskWMoj3dBuO0twe8eiNINe-imW4R5~rlkzLDgV~Lhvug3Z6sB7iFUMzV4hegyuVebp7vODhV5-atzAF6PB1gL~6~vYvesdsDpD-MCaIaDfNL2XXKmBBnp8VIBmE9b8RdOqGkww__"
+                            alt="A hand holding a light bulb in the afternoon">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog two</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <article id="blog-3" class="blog">
+                        <img src="https://s3-alpha-sig.figma.com/img/062a/3beb/3fd9a71d2711716f0bf2116a93ad6814?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=j8JId08VTvqZ0zXBZUhsEha83PjudD9MG0mm-0319NrE1klgwgNv8HcWfH2uMJmSHsEkK1nDCKiqPkQ~azsoDdeiag9WNsmeR-Xi44wRixYQ9NJMXhiCvUzcu1KbHo3XUKxqkJLWpVFpEFaJ6UFOqSm5bCk-TCY9UUMqLzRXvuTrjO-BUObv00AQ1WN08t5L15wirGD13QEjCV~hyP7RwzvhYE8K5qKs0ngTD4hM5RQKPp3ZApnEjG-MMS2Bb2S~rA7kPgEpKH-Fxr4NFaQdfMUTcM6JjAWfOJRvDYiORYEHk9LTU2BORbn0ZNBvxheCL-T~XDWpfDyxE2T~QAQntw__"
+                            alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog three</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <article id="blog-4" class="blog">
+                        <img src="https://s3-alpha-sig.figma.com/img/5a4d/8928/842e1cf5e6ab208031fc99447598d14c?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HQX3sHKXVLX-3s-G6ubePZtwNObbqAF8Dglg4dTWqsqIxhh50q5GA3VUSr3EOuXM4UAfSSxn-MM5PuVK8NUqLkc8~etMkeYBBQuosZt~x4oMVXaQyqW8LxckBLJSaX~aBZNtVQqv~A4Le-1fna3bXz8KSAQdl2IC~ZUqpXOEkdDevw7AQd2076dF7u89HIIZlUAbnQVbI1xS-Y4Q6eNeJvn4jKuxjJ8xoyWsCFJ70kFzBEWaDU-TlEBnWeSn556ZJdQL8rZlmaCS3Efo0f4317LGBYoLO2RWTGUFudAF8AOlLXkw0iR~ISeaHAmTSht4fAIaQfohd7WBCXbO5GVCXw__"
+                            alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog four</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <article id="blog-5" class="blog">
+                        <img src="https://s3-alpha-sig.figma.com/img/b7c7/13ea/e964d4bccf1ee2ab70109b006993d526?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IRljpERwA8BXxLdVhgs8zQKD5zH9mAZe9zMmV9kiHi0BrRO9Xgp8XSZeuCzZrH-blTLA3zAUifV0bZJ0A6XhFyEZ5ZeynCus~oYrg1u21DUg0-DiEml9EfHazvdkcK36MnAE8TQzM1SPfgybnzmcOy5apFjnlzQalZ3ZImOKL3isFXEHAIzsZq6-leuVJOfgebWwHDwvag~kJn6bJJRIPv0f5r1MTxDJIfgYJB4ltDQlmkoZh0xldGD~p7LObu1oPEZ8vaaJkjVEY0Uogtf9ty4Ep80o5VPjoKIdHDa2OCrqqjqNa--AbxO~I04L73KnR9RIHrIeI-thIzfm9Pxd2w__"
+                            alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog five</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <article id="blog-6" class="blog">
+                        <img src="https://s3-alpha-sig.figma.com/img/9b72/8f07/4396bf39d3cbc0d14baeb0804fc69d9a?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TrjHaxZDNilhNE~Zywgf2TE-GWTILX6RFp06rc4hdXSlQEh8uuUx8F7NlnhB6GhnUkY0e4VosLuI3lxqaON7zionn~jLFLNqblrD8HFgz2vO3iTNJKwd1mUVUCHDEtza53tEeSEa2-xn7GXKLkCNGgJChP55OMycTo8qmCdpU34GPfjzvfzWEyQG0q3FMHutC5MbZwjjdn-sm~tkbjWUa3hLiVqhn4sS3TS-YNHy~iB8wSRBUdwnchJjgzdxk4Wpxtwp9a9zP2NY-CfypsvL3E2BpqtvgtmK5VI5iyze6IhX~wHF3p76jqAvePf3Xy68p5xR1yhG6ZMusZNFYpkx3Q__"
+                            alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog six</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                    <article id="blog-6-2" class="blog">
+                        <img src="https://s3-alpha-sig.figma.com/img/9b72/8f07/4396bf39d3cbc0d14baeb0804fc69d9a?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TrjHaxZDNilhNE~Zywgf2TE-GWTILX6RFp06rc4hdXSlQEh8uuUx8F7NlnhB6GhnUkY0e4VosLuI3lxqaON7zionn~jLFLNqblrD8HFgz2vO3iTNJKwd1mUVUCHDEtza53tEeSEa2-xn7GXKLkCNGgJChP55OMycTo8qmCdpU34GPfjzvfzWEyQG0q3FMHutC5MbZwjjdn-sm~tkbjWUa3hLiVqhn4sS3TS-YNHy~iB8wSRBUdwnchJjgzdxk4Wpxtwp9a9zP2NY-CfypsvL3E2BpqtvgtmK5VI5iyze6IhX~wHF3p76jqAvePf3Xy68p5xR1yhG6ZMusZNFYpkx3Q__"
+                            alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                        <time datetime="2022-07-23">JULY 23, 2022</time>
+                        <h1>Blog three</h1>
+                        <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                            learning in the Frontend Developer Career Path.</p>
+                    </article>
+                </section>`
+            break;
+    }
+
+    if (e.target.classList.contains("header")) {
+        console.log("header")
+        main.innerHTML = `
+            <div class="hero" role="img">
+                <time datetime="2022-07-23">JULY 23, 2022</time>
+                <h1>My new journey as a bootcamp student.</h1>
+                <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over to
+                    the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+            </div>
+            <section class="content">
+                <article id="blog-1" class="blog">
+                    <img src="https://www.figma.com/file/hE5klIn1AEQ9XWZWmurs7y/image/8bba0412e2ae760e042fb536660cc3cdf3d078cc"
+                        alt="A laptop with code on it's screen and a small plant beside it">
+                    <time datetime="2022-07-23">JULY 23, 2022</time>
+                    <h1>Blog one</h1>
+                    <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                        learning in the Frontend Developer Career Path.</p>
+                </article>
+                <article id="blog-2" class="blog">
+                    <img src="https://s3-alpha-sig.figma.com/img/bfde/8904/0b8b12a3905aae211b4670527c7c14f6?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=uPjBRtFnVKKhAU3TO5NgjcJJJy9~NEdJMqj5HTnDLxEXqxNtrXbKORLgnXQ377uniwmzxutsrV3r8bbqD7-T4nu42pc7yuW9imuShJx2Y8uyyOGUK7i4jaJ~TyHeQoRd1IFWpuKADIsblgITAGLdvjKWN3PtWx6EmHBylJyhCn9DTUbYaxZRbaSAs4omdHT12BdLV4bd7hGhg19JskWMoj3dBuO0twe8eiNINe-imW4R5~rlkzLDgV~Lhvug3Z6sB7iFUMzV4hegyuVebp7vODhV5-atzAF6PB1gL~6~vYvesdsDpD-MCaIaDfNL2XXKmBBnp8VIBmE9b8RdOqGkww__"
+                        alt="A hand holding a light bulb in the afternoon">
+                    <time datetime="2022-07-23">JULY 23, 2022</time>
+                    <h1>Blog two</h1>
+                    <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                        learning in the Frontend Developer Career Path.</p>
+                </article>
+                <article id="blog-3" class="blog">
+                    <img src="https://s3-alpha-sig.figma.com/img/062a/3beb/3fd9a71d2711716f0bf2116a93ad6814?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=j8JId08VTvqZ0zXBZUhsEha83PjudD9MG0mm-0319NrE1klgwgNv8HcWfH2uMJmSHsEkK1nDCKiqPkQ~azsoDdeiag9WNsmeR-Xi44wRixYQ9NJMXhiCvUzcu1KbHo3XUKxqkJLWpVFpEFaJ6UFOqSm5bCk-TCY9UUMqLzRXvuTrjO-BUObv00AQ1WN08t5L15wirGD13QEjCV~hyP7RwzvhYE8K5qKs0ngTD4hM5RQKPp3ZApnEjG-MMS2Bb2S~rA7kPgEpKH-Fxr4NFaQdfMUTcM6JjAWfOJRvDYiORYEHk9LTU2BORbn0ZNBvxheCL-T~XDWpfDyxE2T~QAQntw__"
+                        alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                    <time datetime="2022-07-23">JULY 23, 2022</time>
+                    <h1>Blog three</h1>
+                    <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                        learning in the Frontend Developer Career Path.</p>
+                </article>
+                <article id="blog-4" class="blog">
+                    <img src="https://s3-alpha-sig.figma.com/img/5a4d/8928/842e1cf5e6ab208031fc99447598d14c?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HQX3sHKXVLX-3s-G6ubePZtwNObbqAF8Dglg4dTWqsqIxhh50q5GA3VUSr3EOuXM4UAfSSxn-MM5PuVK8NUqLkc8~etMkeYBBQuosZt~x4oMVXaQyqW8LxckBLJSaX~aBZNtVQqv~A4Le-1fna3bXz8KSAQdl2IC~ZUqpXOEkdDevw7AQd2076dF7u89HIIZlUAbnQVbI1xS-Y4Q6eNeJvn4jKuxjJ8xoyWsCFJ70kFzBEWaDU-TlEBnWeSn556ZJdQL8rZlmaCS3Efo0f4317LGBYoLO2RWTGUFudAF8AOlLXkw0iR~ISeaHAmTSht4fAIaQfohd7WBCXbO5GVCXw__"
+                        alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                    <time datetime="2022-07-23">JULY 23, 2022</time>
+                    <h1>Blog four</h1>
+                    <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                        learning in the Frontend Developer Career Path.</p>
+                </article>
+                <article id="blog-5" class="blog">
+                    <img src="https://s3-alpha-sig.figma.com/img/b7c7/13ea/e964d4bccf1ee2ab70109b006993d526?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IRljpERwA8BXxLdVhgs8zQKD5zH9mAZe9zMmV9kiHi0BrRO9Xgp8XSZeuCzZrH-blTLA3zAUifV0bZJ0A6XhFyEZ5ZeynCus~oYrg1u21DUg0-DiEml9EfHazvdkcK36MnAE8TQzM1SPfgybnzmcOy5apFjnlzQalZ3ZImOKL3isFXEHAIzsZq6-leuVJOfgebWwHDwvag~kJn6bJJRIPv0f5r1MTxDJIfgYJB4ltDQlmkoZh0xldGD~p7LObu1oPEZ8vaaJkjVEY0Uogtf9ty4Ep80o5VPjoKIdHDa2OCrqqjqNa--AbxO~I04L73KnR9RIHrIeI-thIzfm9Pxd2w__"
+                        alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                    <time datetime="2022-07-23">JULY 23, 2022</time>
+                    <h1>Blog five</h1>
+                    <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                        learning in the Frontend Developer Career Path.</p>
+                </article>
+                <article id="blog-6" class="blog">
+                    <img src="https://s3-alpha-sig.figma.com/img/9b72/8f07/4396bf39d3cbc0d14baeb0804fc69d9a?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TrjHaxZDNilhNE~Zywgf2TE-GWTILX6RFp06rc4hdXSlQEh8uuUx8F7NlnhB6GhnUkY0e4VosLuI3lxqaON7zionn~jLFLNqblrD8HFgz2vO3iTNJKwd1mUVUCHDEtza53tEeSEa2-xn7GXKLkCNGgJChP55OMycTo8qmCdpU34GPfjzvfzWEyQG0q3FMHutC5MbZwjjdn-sm~tkbjWUa3hLiVqhn4sS3TS-YNHy~iB8wSRBUdwnchJjgzdxk4Wpxtwp9a9zP2NY-CfypsvL3E2BpqtvgtmK5VI5iyze6IhX~wHF3p76jqAvePf3Xy68p5xR1yhG6ZMusZNFYpkx3Q__"
+                        alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                    <time datetime="2022-07-23">JULY 23, 2022</time>
+                    <h1>Blog six</h1>
+                    <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                        learning in the Frontend Developer Career Path.</p>
+                </article>
+                <article id="blog-6-2" class="blog">
+                    <img src="https://s3-alpha-sig.figma.com/img/9b72/8f07/4396bf39d3cbc0d14baeb0804fc69d9a?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TrjHaxZDNilhNE~Zywgf2TE-GWTILX6RFp06rc4hdXSlQEh8uuUx8F7NlnhB6GhnUkY0e4VosLuI3lxqaON7zionn~jLFLNqblrD8HFgz2vO3iTNJKwd1mUVUCHDEtza53tEeSEa2-xn7GXKLkCNGgJChP55OMycTo8qmCdpU34GPfjzvfzWEyQG0q3FMHutC5MbZwjjdn-sm~tkbjWUa3hLiVqhn4sS3TS-YNHy~iB8wSRBUdwnchJjgzdxk4Wpxtwp9a9zP2NY-CfypsvL3E2BpqtvgtmK5VI5iyze6IhX~wHF3p76jqAvePf3Xy68p5xR1yhG6ZMusZNFYpkx3Q__"
+                        alt="A laptop that says 'I design and develop experiences that make people's lives simple.' on its screen">
+                    <time datetime="2022-07-23">JULY 23, 2022</time>
+                    <h1>Blog three</h1>
+                    <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                        learning in the Frontend Developer Career Path.</p>
+                </article>
+                <h1 id="more"><a id="view-more" href="#">View More</a></h1>
+            </section>`
+    }
+})
