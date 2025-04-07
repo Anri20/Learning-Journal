@@ -60,6 +60,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 1em;
+    padding: 0;
 }
 
 nav li {
@@ -94,7 +95,7 @@ div.hero {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 32vh;
+    height: 75vw;
     position: relative;
     overflow: hidden;
     color: white;
